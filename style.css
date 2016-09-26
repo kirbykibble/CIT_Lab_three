@@ -5,15 +5,33 @@
     background-color: yellow;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    align-content: center;
 }
+#beebutton {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: 20%;
+    font-size: 50pt;
+    font-family: Impact;
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    transition: all ease 0.5s;
+}
+#beebutton:hover {
+    background-color: black;
+    color: yellow;
+    border-radius: 50px;
+    transition: all ease 0.5s;
+}
+
+
+
 @keyframes buzz {
     0% {background-color: yellow;}
     50% {background-color: black;}
     100% {background-color: yellow;}
-}
-#beebutton {
-    margin: 0 auto;
-    vertical-align: middle;
 }
