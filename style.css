@@ -1,4 +1,18 @@
-.list {
-	color: green;
+#bees {
+    animation-name: buzz;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-color: yellow;
+    width: 100vw;
+    height: 100vh;
 
+}
+@keyframes buzz {
+    0% {background-color: yellow;}
+    50% {background-color: black;}
+    100% {background-color: yellow;}
+}
+
+#bees button {
+    margin: auto 0;
 }
