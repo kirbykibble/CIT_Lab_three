@@ -5,14 +5,15 @@
     background-color: yellow;
     width: 100vw;
     height: 100vh;
-
+    display: flex;
+    align-content: center;
 }
 @keyframes buzz {
     0% {background-color: yellow;}
     50% {background-color: black;}
     100% {background-color: yellow;}
 }
-
-#bees button {
-    margin: auto 0;
+#beebutton {
+    margin: 0 auto;
+    vertical-align: middle;
 }
