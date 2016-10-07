@@ -1,6 +1,12 @@
 function buzz() {
-    var bzzAudio = document.getElementById("buzzing");
-    bzzAudio.play();
+    
+    myAudio = document.getElementById("buzzing");
+    myAudio.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+    myAudio.play();
+    
     var beeBut = document.getElementById("beebutton");
     beeBut.innerHTML = "DEACTIVATE THE BEES"
     beeBut.setAttribute("onclick", "stop();")
